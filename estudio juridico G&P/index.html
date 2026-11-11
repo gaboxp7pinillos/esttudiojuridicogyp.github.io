@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Estudio Jurídico G&amp;P · Asesoría y defensa legal en Lima</title>
+  <meta name="description" content="Estudio Jurídico G&amp;P en Lima: derecho penal, laboral, civil, familiar y corporativo, conciliación, derecho aduanero y comercio exterior. Tres sedes en Lima.">
+  <meta name="theme-color" content="#f4f2ef">
+  <link rel="icon" type="image/png" href="logo/logo-web.png">
+  <link rel="apple-touch-icon" href="logo/icono-ios-180.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="datos.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- Punto de salto del logo: va aparte de la cabecera porque esta es fija (sticky) y saltar a ella no desplaza la página. -->
+  <div id="inicio"></div>
+
+  <header class="site-header">
+    <div class="site-header__bar wrap">
+      <a class="brand" href="#inicio">
+        <img src="logo/logo-web.png" width="322" height="300" alt="Estudio Jurídico G&amp;P, inicio">
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Menú</span>
+        </button>
+        <ul class="nav__list" id="menu" data-slot="nav"></ul>
+      </nav>
+
+      <a class="btn btn--wa btn--small site-header__wa" href="#contacto" data-whatsapp aria-label="Escribir por WhatsApp">
+        <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        <span class="btn__text">WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- Portada -->
+    <section class="hero" aria-labelledby="titulo">
+      <div class="hero__inner wrap">
+        <div class="hero__text">
+          <h1 id="titulo" data-hero>Asesoría y <span class="hero__hl">defensa legal</span> en Lima</h1>
+          <p class="hero__lead stagger-1" data-slot="descripcion" data-hero></p>
+          <div class="hero__actions stagger-2" data-hero>
+            <a class="btn" href="#contacto">Solicitar consulta</a>
+            <a class="btn btn--wa" href="#contacto" data-whatsapp>
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              Escribir por WhatsApp
+            </a>
+          </div>
+          <ul class="hero__facts stagger-3" data-slot="portada-datos" data-hero></ul>
+        </div>
+
+        <div class="carousel stagger-1" data-hero data-carousel role="region" aria-roledescription="carrusel" aria-label="Áreas de práctica del estudio">
+          <div class="photo carousel__stage" data-slot="carrusel">
+            <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="Diapositiva anterior">
+              <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+            </button>
+            <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="Diapositiva siguiente">
+              <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div class="carousel__bar">
+            <div class="carousel__dots" data-slot="carrusel-puntos"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frase destacada -->
+    <section class="band on-hero" aria-label="Nuestro compromiso">
+      <div class="wrap">
+        <div class="statement" data-reveal>
+          <p class="statement__text" data-slot="declaracion"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section on-surface" id="servicios" aria-labelledby="h-servicios">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="h-servicios">Nuestros servicios</h2>
+          <p class="section__intro">Siete áreas de práctica, un mismo compromiso con cada caso.</p>
+        </div>
+
+        <div class="svc-cards" data-slot="servicios"></div>
+      </div>
+    </section>
+
+    <!-- Quiénes somos, misión y visión -->
+    <section class="section" id="nosotros" aria-labelledby="h-nosotros">
+      <div class="wrap">
+        <!-- En tableta y escritorio: recuadro de arena con misión y visión debajo, todo a la vista.
+             En celular (≤720 px) es un carrusel como el de la portada (script.js: carruselEnMovil). -->
+        <div class="carousel carousel--cards carousel--about" data-carousel data-etiqueta="Quiénes somos, misión y visión">
+          <div class="carousel__stage">
+            <div class="slide" data-titulo="Quiénes somos">
+              <div class="about" data-reveal>
+                <div class="about__text">
+                  <h2 id="h-nosotros">Quiénes somos</h2>
+                  <div class="about__body" data-slot="nosotros-parrafos"></div>
+                </div>
+                <figure class="photo about__photo">
+                  <img src="imagenes/web/nosotros-escritorio.jpg" width="1200" height="1798" loading="lazy" draggable="false"
+                       alt="Abogada revisando documentos en su escritorio, con una estatua de la justicia a su lado">
+                </figure>
+              </div>
+            </div>
+
+            <div class="slide" data-titulo="Misión">
+              <article class="pillar pillar--mision" data-reveal>
+                <h2>Misión</h2>
+                <p data-slot="mision"></p>
+              </article>
+            </div>
+
+            <div class="slide" data-titulo="Visión">
+              <article class="pillar pillar--vision stagger-1" data-reveal>
+                <h2>Visión</h2>
+                <p data-slot="vision"></p>
+              </article>
+            </div>
+
+            <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="Diapositiva anterior">
+              <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+            </button>
+            <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="Diapositiva siguiente">
+              <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div class="carousel__bar">
+            <div class="carousel__dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="section on-surface" id="valores" aria-labelledby="h-valores">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="h-valores">Nuestros valores</h2>
+          <p class="section__intro">Los principios con los que atendemos cada caso.</p>
+        </div>
+
+        <div class="values">
+          <figure class="photo values__photo" data-reveal>
+            <img src="imagenes/web/valores-balanza.jpg" width="1200" height="1800" loading="lazy"
+                 alt="Balanza de la justicia sobre un escritorio de madera">
+          </figure>
+          <!-- Tableta y escritorio: un recuadro por valor, todos a la vista. Celular (≤720 px): carrusel
+               como el de la portada, un valor por diapositiva (script.js: carruselEnMovil). -->
+          <div class="carousel carousel--cards carousel--values" data-carousel data-etiqueta="Nuestros valores">
+            <div class="carousel__stage" data-slot="valores">
+              <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="Valor anterior">
+                <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+              </button>
+              <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="Valor siguiente">
+                <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+            <div class="carousel__bar">
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sedes -->
+    <section class="section" id="sedes" aria-labelledby="h-sedes">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="h-sedes">Tres sedes en Lima</h2>
+          <p class="section__intro">Elija una sede para ver su ubicación en el mapa.</p>
+        </div>
+
+        <div class="sedes" data-reveal>
+          <div class="sedes__side">
+            <div class="sedes__list" data-slot="sedes-lista"></div>
+            <div class="sedes__help">
+              <p>¿Duda sobre cuál sede le conviene?<span>Escríbanos y le indicaremos la más conveniente para atenderle.</span></p>
+              <a class="btn btn--wa btn--small" href="#contacto" data-whatsapp>
+                <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                Escribir por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="sedes__mapwrap">
+            <div class="photo sedes__map">
+              <iframe id="mapa" title="Mapa de Google Maps de la sede seleccionada" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+            <div class="sedes__foot">
+              <p class="sedes__note" data-slot="mapa-nota" role="status"></p>
+              <a class="btn btn--small" data-slot="mapa-abrir" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section section--contact on-deep" id="contacto" aria-labelledby="h-contacto">
+      <div class="wrap contact">
+        <div class="contact__head" data-reveal>
+          <h2 id="h-contacto">Cuéntenos su caso</h2>
+          <p class="contact__lead">Le responderemos con orientación sobre cómo podemos ayudarle. Su información se maneja con absoluta reserva.</p>
+        </div>
+
+        <div class="contact__card stagger-1" data-reveal>
+          <form class="form" id="form" novalidate>
+            <div class="form__grid">
+              <div class="field">
+                <label for="f-nombre">Nombre y apellido</label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="f-telefono">Teléfono</label>
+                <input id="f-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="f-correo">Correo electrónico</label>
+                <input id="f-correo" name="correo" type="email" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false">
+              </div>
+              <div class="field">
+                <label for="f-area">Área de su consulta</label>
+                <select id="f-area" name="area" data-slot="areas"></select>
+              </div>
+              <div class="field field--full">
+                <label for="f-mensaje">Cuéntenos brevemente su caso</label>
+                <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
+              </div>
+            </div>
+
+            <!-- Trampa para robots: una persona no lo ve ni lo rellena; si llega con texto, no se envía. -->
+            <div class="field-trap" aria-hidden="true">
+              <label for="f-web">No rellenar este campo</label>
+              <input id="f-web" name="_honey" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form__send">
+              <button class="btn btn--send" id="send" type="submit" data-state="idle" aria-disabled="false">
+                <span class="btn__label" data-state="idle">Solicitar consulta</span>
+                <span class="btn__label" data-state="loading" aria-hidden="true">
+                  <span class="spinner" aria-hidden="true"></span>
+                  Enviando…
+                </span>
+                <span class="btn__label" data-state="done" aria-hidden="true">
+                  <svg class="check" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                    <path d="M3 8.5l3.2 3.2L13 4.5" pathLength="1"/>
+                  </svg>
+                  <span data-slot="done-text">Solicitud enviada</span>
+                </span>
+              </button>
+              <p class="form__note" id="form-note" role="status"></p>
+            </div>
+          </form>
+
+          <div class="contact__alt">
+            <p class="contact__or"><span>o escríbanos directamente</span></p>
+            <a class="btn btn--wa" href="#contacto" data-whatsapp>
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              Escribir por WhatsApp
+            </a>
+            <ul class="contact__data" data-slot="contacto-datos"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer on-deep">
+    <div class="wrap">
+      <div class="footer__cols" data-reveal>
+        <p class="footer__name">Estudio Jurídico G&amp;P</p>
+        <p class="footer__text" data-slot="presentacion-pie"></p>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-slot="anio"></span> Estudio Jurídico G&amp;P · Lima, Perú</p>
+        <p data-slot="credito-fotos"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="#contacto" data-whatsapp aria-label="Escribir por WhatsApp">
+    <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <span class="wa-float__label">WhatsApp</span>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript">Este sitio necesita JavaScript para mostrar sus servicios y el formulario de contacto.</p>
+  </noscript>
+</body>
+</html>
